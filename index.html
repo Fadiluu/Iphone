@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <div class="Main">
+        <div class="phone">
+            <div class="notch">
+                <button class="nutch"></button>    
+            </div>
+            <div class="screen" >
+                
+                <div  id="calc">
+                    <input type="text" id="calcscrn">
+                    <div class="row">
+                        <button style="background:gainsboro;" class="btn" onclick="AllClear()">AC</button>
+                        <button style="background:gainsboro;" class="btn" onclick="SingleClear()">C</button>
+                        <button style="background:gainsboro;" class="btn" onclick="calculate('%')" >%</button>
+                        <button style="background: orange;color: white;" class="btn" onclick="calculate('/')" >/</button>
+
+                    </div>
+                    <div class="row">
+                        <button style="background: #222224;color: white;" class="btn" onclick="calculate(7)" >7</button>
+                        <button style="background: #2c2c2e;color: white;" class="btn" onclick="calculate(8)" >8</button>
+                        <button style="background: #222224;color: white;" class="btn" onclick="calculate(9)" >9</button>
+                        <button style="background: orange;color: white;" class="btn" onclick="calculate('*')" >x</button>
+
+                    </div>
+                    <div class="row">
+                        <button style="background: #222224;color: white;" class="btn" onclick="calculate(4)" >4</button>
+                        <button style="background: #222224;color: white;" class="btn" onclick="calculate(5)" >5</button>
+                        <button style="background: #222224;color: white;" class="btn" onclick="calculate(6)" >6</button>
+                        <button style="background: orange;color: white;" class="btn" onclick="hoi()" >-</button>
+
+                    </div>
+                    <div class="row">
+                        <button style="background: #222224;color: white;" class="btn" onclick="calculate(1)" >1</button>
+                        <button style="background: #222224;color: white;" class="btn" onclick="calculate(2)" >2</button>
+                        <button style="background: #222224;color: white;" class="btn" onclick="calculate(3)" >3</button>
+                        <button style="background: orange;color: white;" class="btn" onclick="calculate('+')" >+</button>
+
+                    </div>
+                    <div class="row">
+                        <button style="background: #222224;color: white;" class="zero" onclick="calculate(0)" >0</button>
+                        <button style="background: #222224;color: white;" class="btn" onclick="calculate('.')" >.</button>
+                        <button style="background: orange;color: white;" class="btn" onclick="EqualTo()" >=</button>
+
+                    </div>
+
+                </div>
+                 <button id="calcbtn" ></button>
+                 <button id="utube"></button>
+            </div>
+            <div class="homebutton">
+                <button id="button"></button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
